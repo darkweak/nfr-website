@@ -1,0 +1,35 @@
+<section id="dates" class="container">
+    <h2 class="relative">Les prochaines dates</h2>
+    <div class="mt-8 overflow-x-scroll rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200 table-fixed">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase">
+                        Date
+                    </th>
+                    <th id="addresses" scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase">
+                        Adresse
+                    </th>
+                    <th id="tickets" scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase">
+                        Acheter des places
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                {{ range (sort .dates "date") }}
+                    <tr class="hover:bg-gray-100">
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap">{{ .date }}</td>
+                        <td class="py-4 px-6 text-sm font-medium text-gray-500">{{ .address | safeHTML }}</td>
+                        <td class="py-4 px-6 text-sm font-medium text-gray-900 flex flex-col space-y-4">
+                            {{ range $platform, $link := .tickets }}
+                                <a href="{{ $link }}" target="_blank" rel="noopener noreferer">
+                                    <img src="{{ (resources.Get (printf "tickets/%s.png" $platform)).RelPermalink }}" class="h-8 w-auto">
+                                </a>
+                            {{ end }}
+                        </td>
+                    </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</section>

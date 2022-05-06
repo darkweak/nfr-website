@@ -1,0 +1,13 @@
+Title = "Northface Records"
+canonifyUrls = "true"
+
+[params]
+    Author = "Sylvain COMBRAQUE"
+    Title = "Northface Records"
+    Description = "Northface Records, actualités, lien vers les places de concert, agrégation des dernières photos"
+    BaseURL = "https://lively-chaja-386fb3.netlify.app/"
+    LanguageCode = "fr-fr"
+    Images = ["https://cdns-images.dzcdn.net/images/artist/7c5dd5ab15362696a3a688d55292644e/500x500.jpg"]
+
+[social]
+    twitter = "thenorthface"

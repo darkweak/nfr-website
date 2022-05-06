@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body class="flex flex-col font-sans min-h-screen bg-primary">
+        {{ partial "navbar.html" (dict "navbar" .Site.Data.navbar "path" .RelPermalink ) }}
+        <div class="header px-8 flex" style="background-image: url('{{ (resources.Get "images/BE-cover.jpg").RelPermalink }}')">
+            <img src="{{ (resources.Get "images/BE.png").RelPermalink }}" class="mt-auto">
+            <div class="font-extrabold text-4xl md:text-5xl lg:text-6xl text-center h-full container m-auto">
+                <h1 class="uppercase m-auto title">
+                    {{ block "title" . }}{{ end }}
+                </h1>
+            </div>
+        </div>
+        <div class="px-2">
+            {{ partial "dates.html" (dict "dates" .Site.Data.bekar.dates ) }}
+            {{ partial "photos.html" (dict "photos" .Site.Data.bekar.photos ) }}
+            {{ partial "listen.html" }}
+            {{ partial "footer.html" . }}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="{{ .Site.Params.BaseURL }}css/page.css" as="style">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="{{ if .IsPage }}{{ .Params.Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.Author }}">
+<meta name="robots" content="index,follow">
+{{ template "_internal/twitter_cards.html" . }}
+<meta property="og:url" content="{{ .Site.Params.BaseURL }}" />
+{{ template "_internal/opengraph.html" . }}
+<title>{{ default .Site.Params.Title .Params.Name }}</title>
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="{{ .Site.Params.BaseURL }}css/page.css">

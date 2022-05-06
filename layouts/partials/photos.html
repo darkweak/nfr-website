@@ -1,0 +1,9 @@
+<section id="photos" class="container">
+    <h2 class="relative">Les dernières photos</h2>
+    <div class="pt-8 grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    {{.url}}
+        {{ range .photos }}
+            <img src="{{ (resources.Get (printf "/images/bekar/%s" .url)).RelPermalink }}" loading="lazy" class="w-full object-cover h-full rounded-lg" />
+        {{ end }}
+    </div>
+</section>
