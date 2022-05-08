@@ -1,3 +1,8 @@
+- date: "2022-06-18"
+  address: LE LIBERTE - L'ETAGE - RENNES
+  tickets:
+    seetickets: https://www.seetickets.com/fr/tr/event/alkpote-bekar/l-etage-le-liberte-/8422695
+    ticketmaster: https://www.ticketmaster.fr/fr/salle/le-liberte-rennes/idsite/10978
 - date: "2022-06-30"
   address: LA CITADELLE - QUARTIER DE TURENNE - ARRAS
   tickets:
@@ -11,8 +16,3 @@
   tickets:
     seetickets: https://www.seetickets.com/fr/d/event/bekar/la-machine-du-moulin-rouge/8447243
     ticketmaster: https://www.ticketmaster.fr/fr/salle/la-machine-du-moulin-rouge/idsite/14084
-- date: "2022-06-18"
-  address: LE LIBERTE - L'ETAGE - RENNES
-  tickets:
-    seetickets: https://www.seetickets.com/fr/tr/event/alkpote-bekar/l-etage-le-liberte-/8422695
-    ticketmaster: https://www.ticketmaster.fr/fr/salle/le-liberte-rennes/idsite/10978
