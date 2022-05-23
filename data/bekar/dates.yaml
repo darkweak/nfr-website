@@ -6,11 +6,6 @@
   address: LA CITADELLE - QUARTIER DE TURENNE - ARRAS
   tickets:
     ticketmaster: https://www.ticketmaster.fr/fr/salle/la-citadelle-quartier-de-turenne-arras/idsite/12101
-- date: "2022-05-19"
-  address: LA MACHINE DU MOULIN ROUGE - PARIS
-  tickets:
-    seetickets: https://www.seetickets.com/fr/d/event/bekar/la-machine-du-moulin-rouge/8447243
-    ticketmaster: https://www.ticketmaster.fr/fr/salle/la-machine-du-moulin-rouge/idsite/14084
 - date: "2022-06-18"
   address: LE LIBERTE - L'ETAGE - RENNES
   tickets:
