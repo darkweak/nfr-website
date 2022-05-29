@@ -1,8 +1,3 @@
-- date: "2022-06-18"
-  address: L'etage, Le Liberté,, Rennes
-  tickets:
-    seetickets: https://www.seetickets.com/fr/tr/event/alkpote-bekar/l-etage-le-liberte-/8422695
-    ticketmaster: https://www.ticketmaster.fr/fr/salle/le-liberte-rennes/idsite/10978
 - date: "2022-06-30"
   address: LA CITADELLE - QUARTIER DE TURENNE - ARRAS
   tickets:
@@ -11,3 +6,8 @@
   address: LA CITADELLE - QUARTIER DE TURENNE - ARRAS
   tickets:
     ticketmaster: https://www.ticketmaster.fr/fr/salle/la-citadelle-quartier-de-turenne-arras/idsite/12101
+- date: "2022-06-18"
+  address: LE LIBERTE - L'ETAGE - RENNES
+  tickets:
+    seetickets: https://www.seetickets.com/fr/tr/event/alkpote-bekar/l-etage-le-liberte-/8422695
+    ticketmaster: https://www.ticketmaster.fr/fr/salle/le-liberte-rennes/idsite/10978
